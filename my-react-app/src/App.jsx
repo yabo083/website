@@ -1,10 +1,12 @@
+import Counter from "./Counter";
+import MyComponent from "./MyComponent";
 
-import ProfilePicture from "./ProfilePicture";
+
 
 function App() {
   return (
-    <div className="">
-      <ProfilePicture />
+    <div className="flex justify-center items-center mt-3">
+      <Counter />
     </div>
   );
 }
