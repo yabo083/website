@@ -1,10 +1,10 @@
-import Counter from "./Counter";
-import MyComponent from "./MyComponent";
+import ColorPicker from "./ColorPicker";
+
 
 function App() {
   return (
     <div className="flex justify-center items-center mt-5 ">
-      <MyComponent />
+      <ColorPicker />
     </div>
   );
 }
