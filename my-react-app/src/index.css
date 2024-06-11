@@ -28,11 +28,9 @@
     }
 
     li {
-        @apply m-2;
+        @apply m-2 cursor-pointer;
     }
 
-    ol {
-        @apply list-decimal list-inside;
-    }
+    
 }
 
