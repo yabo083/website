@@ -1,10 +1,11 @@
-import ColorPicker from "./ColorPicker";
+import MyComponent from "./MyComponent";
+
 
 
 function App() {
   return (
-    <div className="flex justify-center items-center mt-5 ">
-      <ColorPicker />
+    <div className="flex flex-col justify-center items-center mt-5 ">
+      <MyComponent />
     </div>
   );
 }
