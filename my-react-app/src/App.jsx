@@ -1,9 +1,10 @@
-import MyComponent from "./MyComponent";
+
+import StopWatch from "./StopWatch";
 
 function App() {
   return (
     <div className="flex flex-col ">
-      <MyComponent />
+      <StopWatch />
     </div>
   );
 }

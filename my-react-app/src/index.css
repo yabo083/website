@@ -41,6 +41,9 @@
         @apply bg-[url(D:\VsCode_WorkSpace\react-study\website\my-react-app\src\assets\Asuna.jpg)] bg-center bg-no-repeat bg-cover bg-fixed m-0 flex justify-center min-h-screen items-center relative;
     } */
 
+    body {
+        @apply bg-gradient-to-r from-pink-200 to-indigo-400 m-0 flex justify-center min-h-screen items-center relative;
+    }
     
 }
 
