@@ -1,39 +1,37 @@
 import React, { useState, useEffect } from "react";
 
 const MyComponent = () => {
-  const [count, setCount] = useState(0);
-  const [color, setColor] = useState("green");
 
-  useEffect(() => {
-    document.title = `Count: ${count} ${color}`;
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
-    return () => {
-      document.title = "React App";
-    };
-  }, [color, count]);
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        console.log('EVENT LISTENER ADDED!');
 
-  const addCount = () => {
-    setCount((c) => c + 1);
-  };
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            console.log('EVENT LISTENER REMOVED!');
+        }
+    }, []);
 
-  const subtractCount = () => {
-    setCount((c) => c - 1);
-  };
+    useEffect(() => {
+      document.title = `Size: ${width} x ${height}`  
+    },[width, height])
 
-  const changeColor = () => {
-    setColor((c) => (c === "green" ? "red" : "green"));
-  };
+    // window.addEventListener('resize', handleResize);
 
-  return (
-    <div>
-      <h1>My Component</h1>
-      <p style={{ color: color }}>Count: {count}</p>
-      <button onClick={addCount}>Add</button>
-      <button onClick={subtractCount}>subtract</button>
-      <br />
-      <button onClick={changeColor}>Change Color</button>
-    </div>
-  );
+    // console.log('EVENT LISTENER ADDED!');
+
+    function handleResize () {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
+
+  return <div>
+    <p>Window Width: {width}</p>    
+    <p>Window Hight: {height}</p>    
+  </div>;
 };
 
 export default MyComponent;
