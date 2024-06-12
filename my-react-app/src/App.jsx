@@ -1,10 +1,9 @@
-import MyComponent from "./MyComponent";
-
+import DigitalClock from "./DigitalClock";
 
 function App() {
   return (
-    <div className="flex flex-col">
-      <MyComponent />
+    <div className="absolute inset-x-0 bottom-12">
+      <DigitalClock />
     </div>
   );
 }

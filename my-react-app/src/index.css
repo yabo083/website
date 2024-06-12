@@ -35,6 +35,10 @@
         @apply list-decimal list-inside;
     }
 
+    body {
+        @apply bg-[url(D:\VsCode_WorkSpace\react-study\website\my-react-app\src\assets\Asuna.jpg)] bg-center bg-no-repeat bg-cover bg-fixed m-0 flex justify-center min-h-screen items-center relative;
+    }
+
     
 }
 
