@@ -1,9 +1,9 @@
-import ComponentA from "./ComponentA";
+import MyComponent from "./MyComponent";
 
 function App() {
   return (
     <div className="flex flex-col ">
-      <ComponentA />
+      <MyComponent />
     </div>
   );
 }
