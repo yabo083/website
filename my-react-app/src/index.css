@@ -23,6 +23,8 @@
         @apply border border-gray-400 rounded p-2 m-2 h-10;
     }
 
+    
+
     ul {
         @apply list-disc list-inside;
     }
@@ -35,9 +37,9 @@
         @apply list-decimal list-inside;
     }
 
-    body {
+    /* body {
         @apply bg-[url(D:\VsCode_WorkSpace\react-study\website\my-react-app\src\assets\Asuna.jpg)] bg-center bg-no-repeat bg-cover bg-fixed m-0 flex justify-center min-h-screen items-center relative;
-    }
+    } */
 
     
 }
